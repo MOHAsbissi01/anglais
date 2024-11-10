@@ -1,0 +1,280 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+      
+  header nav ul li a {
+  color: black; /* Link text color */
+  text-decoration: none;
+  background-color: white; /* White background for each button */
+  padding: 10px 20px; /* Add some padding to make the buttons look nice */
+  border-radius: 5px; /* Optional: adds rounded corners to the buttons */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header nav ul li a:hover {
+  background-color: #f0f0f0; /* Lighter background color when hovering */
+  color: #003366; /* Optional: Change text color on hover */
+}
+
+
+  
+  .bg-image {
+    /* Set the background image */
+    background-image: url('background.jpeg'); /* Make sure the image path is correct */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center center; /* Centers the image */
+    height: 400px; /* Adjust the height as needed */
+    width: 100%;
+    margin-top: -50px; /* Optional: to create a slight overlap with the hero section */
+  }
+  .content {
+    position: absolute;
+    z-index: 1; /* Makes sure the content is on top of the canvas */
+    text-align: center;
+    color: #003366;
+  }
+
+  .hero h1 {
+    color: #333333; /* Darker color */
+    font-size: 48px; /* Make the text bigger, adjust this value as needed */
+    font-weight: bold; /* Optional: make it bold for emphasis */
+    line-height: 1.2; /* Adjust line height for better spacing */
+  }
+  .sdg-logo {
+    width: 150px; /* Set the width to 150px (adjust as needed) */
+    height: 150px; /* Maintain the aspect ratio */
+  }
+
+  .logo-img {
+    width: 180px; /* Adjust this value to make the icon smaller */
+    height: auto;
+  }
+
+  h1, h2, h3, p {
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Header */
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #66cc99;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #66cc99;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #4fa577;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    color: #003366;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Goals Section */
+  .goals ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .goals li {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goals li:hover {
+    background-color: #66cc99;
+    color: white;
+  }
+  
+  /* Projects Section */
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-item {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  .project-item p {
+    font-size: 1rem;
+  }
+  
+  /* Get Involved Section */
+  .get-involved {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .get-involved h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .get-involved p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .get-involved .cta-button {
+    font-size: 1.2rem;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #e6f7ff;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  footer p {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  footer .social-media a:hover {
+    color: #66cc99;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    section h2 {
+      font-size: 2rem;
+    }
+  
+    .project-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+    
